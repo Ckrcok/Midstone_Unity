@@ -13,14 +13,14 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638041123482005673
-    m_Hash: 2199572461
+      ticks: 638047785011216834
+    m_Hash: 994498553
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
   m_LocalFileStatus: []
 m_ProjectPath: C:/Users/onols/Documents/GitHub/Midstone_Unity/UnityMidstone/Packages
-m_EditorVersion: 2022.1.20f1 (01d83b40d570)
+m_EditorVersion: 2022.1.16f1 (7321c9670bc2)
 m_ResolvedPackages:
 - packageId: com.unity.collab-proxy@1.17.2
   testable: 0
@@ -36,7 +36,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: Editor
-  type: 
+  type: asset
   description: The Version Control package gives you the ability to use either Collaborate
     or Plastic SCM for Unity (beta) in the Unity editor. To use Plastic SCM for Unity
     (beta), a Plastic SCM subscription is required. Learn more about how you can
@@ -96,6 +96,7 @@ m_ResolvedPackages:
     - 1.17.1
     - 1.17.2
     - 1.17.6
+    - 1.17.7
     - 2.0.0-preview.6
     - 2.0.0-preview.8
     - 2.0.0-preview.15
@@ -109,6 +110,7 @@ m_ResolvedPackages:
     compatible:
     - 1.17.2
     - 1.17.6
+    - 1.17.7
     - 2.0.0-preview.6
     - 2.0.0-preview.8
     - 2.0.0-preview.15
@@ -119,13 +121,13 @@ m_ResolvedPackages:
     - 2.1.0-preview.3
     - 2.1.0-preview.5
     - 2.1.0-preview.6
-    verified: 1.17.6
+    verified: 1.17.7
   dependencies:
   - name: com.unity.services.core
     version: 1.0.1
   resolvedDependencies:
   - name: com.unity.services.core
-    version: 1.4.3
+    version: 1.4.2
   - name: com.unity.modules.unitywebrequest
     version: 1.0.0
   - name: com.unity.nuget.newtonsoft-json
@@ -153,7 +155,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hideInEditor: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
   datePublishedTicks: 637937432480000000
   documentationUrl: 
@@ -489,7 +491,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: Unity Test Framework
-  type: 
+  type: asset
   description: Test framework for running Edit mode and Play mode tests in Unity.
   status: 4
   errors: []
@@ -531,12 +533,14 @@ m_ResolvedPackages:
     - 1.1.33
     - 1.3.0
     - 2.0.1-exp.1
+    - 2.0.1-exp.2
     - 2.0.1-pre.12
     - 2.0.1-pre.18
     compatible:
     - 1.1.33
     - 1.3.0
     - 2.0.1-exp.1
+    - 2.0.1-exp.2
     - 2.0.1-pre.12
     - 2.0.1-pre.18
     verified: 1.1.33
@@ -564,7 +568,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hideInEditor: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
   datePublishedTicks: 637938212700000000
   documentationUrl: 
@@ -837,9 +841,11 @@ m_ResolvedPackages:
     - 1.7.0
     - 1.7.1
     - 1.7.2
+    - 1.8.0
     compatible:
     - 1.7.1
     - 1.7.2
+    - 1.8.0
     verified: 1.7.2
   dependencies:
   - name: com.unity.modules.director
@@ -3004,6 +3010,7 @@ m_ResolvedPackages:
     - 1.2.0-exp.7
     - 1.2.0
     - 1.2.1
+    - 1.2.2
     compatible:
     - 1.1.1
     - 1.2.0-exp.1
@@ -3015,6 +3022,7 @@ m_ResolvedPackages:
     - 1.2.0-exp.7
     - 1.2.0
     - 1.2.1
+    - 1.2.2
     verified: 1.1.1
   dependencies:
   - name: com.unity.test-framework
@@ -3057,12 +3065,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.1.1
     nextVersion: 
-- packageId: com.unity.services.core@1.4.3
+- packageId: com.unity.services.core@1.4.2
   testable: 0
   isDirectDependency: 0
-  version: 1.4.3
+  version: 1.4.2
   source: 1
-  resolvedPath: C:\Users\onols\Documents\GitHub\Midstone_Unity\UnityMidstone\Library\PackageCache\com.unity.services.core@1.4.3
+  resolvedPath: C:\Users\onols\Documents\GitHub\Midstone_Unity\UnityMidstone\Library\PackageCache\com.unity.services.core@1.4.2
   assetPath: Packages/com.unity.services.core
   name: com.unity.services.core
   displayName: Services Core
@@ -3099,6 +3107,7 @@ m_ResolvedPackages:
     - 1.5.2
     - 1.6.0
     compatible:
+    - 1.4.2
     - 1.4.3
     - 1.5.2
     - 1.6.0
@@ -3127,16 +3136,16 @@ m_ResolvedPackages:
     capabilities: 7
   hideInEditor: 0
   isAssetStorePackage: 0
-  datePublishedTicks: 637959096350000000
+  datePublishedTicks: 637919618520000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git
-    revision: 145c9bbe93bde4784d4641e172be4ca40a3745fc
+    revision: 3964d1641ebec474aa425853985bccbdb89c2a49
     path: 
   unityLifecycle:
-    version: 1.4.3
+    version: 1.4.2
     nextVersion: 
 - packageId: com.unity.settings-manager@2.0.1
   testable: 0
