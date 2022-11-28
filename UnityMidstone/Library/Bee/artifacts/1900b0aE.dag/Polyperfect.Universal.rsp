@@ -339,6 +339,8 @@
 -r:"E:/Program Files (x86)/Unity/2022.1.16f1/Editor/Data/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll"
 -r:"E:/Program Files (x86)/Unity/2022.1.16f1/Editor/Data/NetStandard/ref/2.1.0/netstandard.dll"
 -r:"E:/Program Files (x86)/Unity/2022.1.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/polyperfect/Poly Halloween/- Scripts/MouseLook.cs"
 "Assets/polyperfect/Poly Halloween/- Scripts/PlayerMovement.cs"
 -langversion:9.0
