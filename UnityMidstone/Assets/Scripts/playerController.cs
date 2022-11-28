@@ -13,16 +13,11 @@ public class playerController : MonoBehaviour {
     public float Snappiness = 18;
     // Force when jumping
     public float JumpHeight = 60;
-    // Speed of FastFall
-    public float FastFallSpeed = 100;
-    // The amount of jumps allowed when in the air
     public int AmountOfJumps = 2;
     // Jumps since last touching ground
     float JumpsSinceGrounded;
     // Has the player finished jumping
     bool JumpFinished = true;
-    // Has the player finished FastFalling
-    bool FastFallFinished = true;
 
     void FixedUpdate() {
         //Horizontal movement
@@ -42,21 +37,6 @@ public class playerController : MonoBehaviour {
         }
         // Set JumpFinished to false if jump key is not touched
         if (Input.GetAxisRaw("Jump") < 0.5) { JumpFinished = true; }
-        // FastFall
-        if (Input.GetAxisRaw("Fall") > 0.95)
-        {
-            // Set velocity to down
-            RigidBody.velocity = new Vector3(RigidBody.velocity.x, FastFallSpeed * -1, 0);
-            // Set FastFallFinished to false
-            FastFallFinished = false;
-        }
-        // FastFall key not touched
-        if (Input.GetAxisRaw("Fall") < 0.95 && FastFallFinished == false) {
-            // Set FastFallFinished to true
-            FastFallFinished = true;
-            // Return velocity to max
-            RigidBody.velocity = new Vector3(RigidBody.velocity.x, -55, 0);
-        }
         
         // Reloads the scene if the player is under y = 25
         if (transform.position.y <= -25)
