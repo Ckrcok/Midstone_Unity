@@ -30,6 +30,7 @@ public class EnemyAi : MonoBehaviour
     {
         player = GameObject.Find("Player").transform;
         agent = GetComponent<NavMeshAgent>();
+        Debug.Log(player);
     }
 
     private void Update()
@@ -45,16 +46,23 @@ public class EnemyAi : MonoBehaviour
 
     private void Patroling()
     {
-        if (!walkPointSet) SearchWalkPoint();
+         Debug.Log("Patroling");
+        if (!walkPointSet){
+            SearchWalkPoint();
+            };
 
-        if (walkPointSet)
+        if (walkPointSet){
+
             agent.SetDestination(walkPoint);
+        }
 
         Vector3 distanceToWalkPoint = transform.position - walkPoint;
 
         //Walkpoint reached
-        if (distanceToWalkPoint.magnitude < 1f)
+        if (distanceToWalkPoint.magnitude < 1f){
+
             walkPointSet = false;
+        }
     }
     private void SearchWalkPoint()
     {
@@ -70,11 +78,13 @@ public class EnemyAi : MonoBehaviour
 
     private void ChasePlayer()
     {
+         Debug.Log("Chasing");
         agent.SetDestination(player.position);
     }
 
     private void AttackPlayer()
     {
+        Debug.Log("Attacking");
         //Make sure enemy doesn't move
         agent.SetDestination(transform.position);
 
