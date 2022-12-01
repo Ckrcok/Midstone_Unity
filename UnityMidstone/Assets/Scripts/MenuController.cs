@@ -50,5 +50,11 @@ public class MenuController : MonoBehaviour
     public void OpenOptions()
     {
         optionsScreen.SetActive(true);
+        Debug.Log("OptionsMenu");
+    }
+
+    public void CloseOptions()
+    {
+        optionsScreen.SetActive(false);
     }
 }
