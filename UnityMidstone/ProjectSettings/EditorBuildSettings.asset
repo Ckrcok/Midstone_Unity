@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_GamesPlusJames Menu Assets/Pause Scene/Pause Setup.unity
     guid: d18591eb04466fd428794a14431f387f
+  - enabled: 1
+    path: Assets/Scenes/MainLevel.unity
+    guid: 802cde6f536d9204884d0bfcd14c86a3
   m_configObjects: {}
