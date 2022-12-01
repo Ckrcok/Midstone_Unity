@@ -30,7 +30,7 @@ public class EnemyAi : MonoBehaviour
     {
         player = GameObject.Find("Player").transform;
         agent = GetComponent<NavMeshAgent>();
-        Debug.Log(player);
+        Debug.Log(player.name);
     }
 
     private void Update()
@@ -46,7 +46,7 @@ public class EnemyAi : MonoBehaviour
 
     private void Patroling()
     {
-         Debug.Log("Patroling");
+        //  Debug.Log("Patroling");
         if (!walkPointSet){
             SearchWalkPoint();
             };
