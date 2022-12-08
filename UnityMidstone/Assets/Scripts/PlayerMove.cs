@@ -13,15 +13,11 @@ public class PlayerMove : MonoBehaviour
     public Transform groundCheck; // Check if we are on the ground
     public float groundDistance = 0.18f;
     public LayerMask groundMask; // Set a field for ground layer
-    float speed; // moving speed
+    float speed; 
 
     Vector3 velocity;
     public bool grounded;
-    //private void Start()
-    //{
-    //    // always add a controller
-    //    controller = gameObject.AddComponent<CharacterController>();
-    //}
+    
     private void Update() 
     {
         grounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
@@ -29,7 +25,7 @@ public class PlayerMove : MonoBehaviour
         Debug.Log("Player Position: " + groundCheck.position);
         Debug.Log("Player Velocity: " + velocity);
 
-        if (grounded && velocity.y < 0) // If the player is grounded
+        if (grounded && velocity.y < 0) // constant negative y velocity when grounded to provide realistic downward movement on slopes
         {
             velocity.y = -2f;
             Debug.Log("Grounded");
@@ -56,8 +52,8 @@ public class PlayerMove : MonoBehaviour
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity); 
         }
 
-        velocity.y += gravity * Time.deltaTime; // Set the regular gravity
+        velocity.y += gravity * Time.deltaTime; // set Vertical velocity bound to gravity
 
-        controller.Move(velocity * Time.deltaTime); // Apply gravity to character controller
+        controller.Move(velocity * Time.deltaTime); // Apply Vertical velocity to character controller
     }
 }
