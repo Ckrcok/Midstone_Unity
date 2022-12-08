@@ -71,3 +71,12 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+UnityMidstone/Library/PackageCache/com.unity.timeline@1.7.1/Samples~/GameplaySequenceDemo/Animation/Push-Stmb_Rcvr_Jog_Hv_anim1.fbx
+UnityMidstone/Library/PackageCache/com.unity.timeline@1.7.1/Samples~/GameplaySequenceDemo/Animation/Push-Stmb_Rcvr_Wk_Lt_anim1.fbx
+UnityMidstone/Library/PackageCache/com.unity.timeline@1.7.1/Samples~/GameplaySequenceDemo/Animation/RunSideFlip.fbx
+UnityMidstone/Library/PackageCache/com.unity.timeline@1.7.1/Samples~/GameplaySequenceDemo/Animation/Stance.fbx
+UnityMidstone/Library/PackageCache/com.unity.timeline@1.7.1/Samples~/GameplaySequenceDemo/Animation/Turns_StartStop-Wk.fbx
+UnityMidstone/Library/PackageCache/com.unity.timeline@1.7.1/Samples~/GameplaySequenceDemo/Animation/Victory-anim1.fbx
+UnityMidstone/Library/PackageCache/com.unity.timeline@1.7.1/Samples~/GameplaySequenceDemo/Character/Models/DefaultMale.fbx
+*.fbx
+UnityMidstone/Assets/Scripts/AudioManager.cs.meta
