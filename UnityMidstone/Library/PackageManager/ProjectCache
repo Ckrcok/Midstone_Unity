@@ -369,7 +369,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: 
+  type: asset
   description: The JetBrains Rider Editor package provides an integration for using
     the JetBrains Rider IDE as a code editor for Unity. It adds support for generating
     .csproj files for code completion and auto-discovery of installations.
@@ -409,10 +409,12 @@ m_ResolvedPackages:
     - 3.0.14
     - 3.0.15
     - 3.0.16
+    - 3.0.17
     compatible:
     - 3.0.15
     - 3.0.16
-    verified: 3.0.16
+    - 3.0.17
+    verified: 3.0.17
   dependencies:
   - name: com.unity.ext.nunit
     version: 1.0.6
@@ -427,7 +429,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hideInEditor: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
   datePublishedTicks: 637914298700000000
   documentationUrl: 
@@ -454,7 +456,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: 
+  type: asset
   description: Code editor integration for supporting Visual Studio as code editor
     for unity. Adds support for generating csproj files for intellisense purposes,
     auto discovery of installations, etc.
@@ -481,9 +483,11 @@ m_ResolvedPackages:
     - 2.0.14
     - 2.0.15
     - 2.0.16
+    - 2.0.17
     compatible:
     - 2.0.16
-    verified: 2.0.16
+    - 2.0.17
+    verified: 2.0.17
   dependencies:
   - name: com.unity.test-framework
     version: 1.1.9
@@ -504,7 +508,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hideInEditor: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
   datePublishedTicks: 637914298680000000
   documentationUrl: 
@@ -1103,9 +1107,11 @@ m_ResolvedPackages:
     - 1.7.7
     - 1.7.8
     - 1.8.0-pre.1
+    - 1.8.0
     compatible:
     - 1.7.8
     - 1.8.0-pre.1
+    - 1.8.0
     verified: 1.7.8
   dependencies:
   - name: com.unity.ugui
@@ -3304,11 +3310,13 @@ m_ResolvedPackages:
     - 1.4.3
     - 1.5.2
     - 1.6.0
+    - 1.7.0
     compatible:
     - 1.4.2
     - 1.4.3
     - 1.5.2
     - 1.6.0
+    - 1.7.0
     verified: 1.4.3
   dependencies:
   - name: com.unity.modules.unitywebrequest

@@ -22,8 +22,8 @@ public class PlayerMove : MonoBehaviour
     {
         grounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
-        Debug.Log("Player Position: " + groundCheck.position);
-        Debug.Log("Player Velocity: " + velocity);
+        //Debug.Log("Player Position: " + groundCheck.position);
+        //Debug.Log("Player Velocity: " + velocity);
 
         if (grounded && velocity.y < 0) // constant negative y velocity when grounded to provide realistic downward movement on slopes
         {

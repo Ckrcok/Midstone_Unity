@@ -19,6 +19,17 @@ public class MenuController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (isPaused)
+        {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
+
         if(Input.GetKeyDown(KeyCode.Escape))
         {
             if(isPaused)
@@ -29,7 +40,7 @@ public class MenuController : MonoBehaviour
             {
                 isPaused = true;
                 pauseMenu.SetActive(true);
-                Time.timeScale = 0f;
+                Time.timeScale = 0.0f;
             }
         }
     }
