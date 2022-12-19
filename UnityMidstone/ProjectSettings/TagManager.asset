@@ -3,19 +3,23 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Enemy
+  - unlockedDoor
+  - bathroomDoor
+  - elevator
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Interact
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
+  - groundMask
+  - pauseMenuUI
+  - PlayerLayer
+  - bathRoomLayer
+  - elevatorLayer
   - 
   - 
   - 
