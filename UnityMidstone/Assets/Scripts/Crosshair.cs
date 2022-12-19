@@ -114,7 +114,7 @@ public class Crosshair : MonoBehaviour
     {
         get
         {
-            if (player.GetComponent<PlayerMove>().grounded == false)
+            if (player.GetComponent<Player>().grounded == false)
             {
                 return true;
             }

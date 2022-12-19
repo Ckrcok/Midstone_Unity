@@ -13,17 +13,17 @@ public class PlayerMove : MonoBehaviour
     public Transform groundCheck; // Check if we are on the ground
     public float groundDistance = 0.18f;
     public LayerMask groundMask; // Set a field for ground layer
-    float speed; 
+    float speed;
 
     Vector3 velocity;
     public bool grounded;
-    
-    private void Update() 
+
+    private void Update()
     {
         grounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
-        //Debug.Log("Player Position: " + groundCheck.position);
-        //Debug.Log("Player Velocity: " + velocity);
+        Debug.Log("Player Position: " + groundCheck.position);
+        Debug.Log("Player Velocity: " + velocity);
 
         if (grounded && velocity.y < 0) // constant negative y velocity when grounded to provide realistic downward movement on slopes
         {
@@ -33,7 +33,7 @@ public class PlayerMove : MonoBehaviour
 
         if (Input.GetKey(KeyCode.LeftShift)) // adjust move speed
         {
-            speed = runSpeed; 
+            speed = runSpeed;
         }
         else
         {
@@ -47,9 +47,9 @@ public class PlayerMove : MonoBehaviour
 
         controller.Move(move * speed * Time.deltaTime); // Move function
 
-        if (Input.GetButtonDown("Jump") && grounded) 
+        if (Input.GetButtonDown("Jump") && grounded)
         {
-            velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity); 
+            velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
 
         velocity.y += gravity * Time.deltaTime; // set Vertical velocity bound to gravity

@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - Key
+  - HumberHawk
+  - StaminaDrink
+  - SecurityCard
+  - HHawkCollectible
   layers:
   - Default
   - TransparentFX
@@ -14,7 +19,7 @@ TagManager:
   - UI
   - groundMask
   - pauseMenuUI
-  - 
+  - item
   - 
   - 
   - 
